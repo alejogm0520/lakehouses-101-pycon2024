@@ -1,0 +1,19 @@
+<configuration>
+    <property>
+        <name>fs.s3a.access.key</name>
+        <value>minio_ak</value>
+    </property>
+    <property>
+        <name>fs.s3a.secret.key</name>
+        <value>minio_sk</value>
+    </property>
+    <property>
+        <name>fs.s3a.endpoint</name>
+        <value>http://minio:9000</value>
+    </property>
+    <property>
+        <name>fs.s3a.path.style.access</name>
+        <value>true</value>
+    </property>
+
+</configuration>
