@@ -13,7 +13,6 @@ services:
       - '8888:8888'
     env_file:
       - 'minio.env'
-      - 'mariadb.env'
     entrypoint: /home/PyCon2024/venv/bin/jupyter lab --allow-root --no-browser --ip=0.0.0.0
     networks:
       - lakehouse-network
