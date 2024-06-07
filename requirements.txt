@@ -1,0 +1,5 @@
+jupyterlab
+pyspark==3.5.1
+sqlalchemy
+trino
+pandas
