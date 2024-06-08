@@ -29,7 +29,7 @@ download_file https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-aws/3.3.3/
 
 echo "AWS Java SDK jars"
 # SDK
-download_file https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk/1.11.1026/aws-java-sdk-1.11.1026.jar ./TempPackages
+download_file https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-bundle/1.11.1026/aws-java-sdk-bundle-1.11.1026.jar ./TempPackages
 
 echo "Postgres Driver for Hive"
 download_file https://jdbc.postgresql.org/download/postgresql-42.7.3.jar ./TempPackages
