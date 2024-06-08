@@ -42,9 +42,10 @@ COPY config/spark/spark-defaults.conf $SPARK_HOME/conf/
 ADD requirements.txt /home/PyCon2024/requirements.txt
 RUN /home/PyCon2024/venv/bin/pip3 install -r /home/PyCon2024/requirements.txt
 
+ADD config/docker/entrypoint.sh /home/PyCon2024/entrypoint.sh
+RUN chmod +x /home/PyCon2024/entrypoint.sh
 
-#RUN export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:/bin/java::"); echo $JAVA_HOME
-#RUN apt-get install pipx -y
-#RUN pipx ensurepath
-# RUN ln -s /usr/bin/python3 /usr/bin/python
+ENTRYPOINT ["/home/PyCon2024/entrypoint.sh"]
+
+
 

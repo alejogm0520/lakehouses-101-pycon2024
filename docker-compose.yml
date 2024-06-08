@@ -8,12 +8,12 @@ services:
     build:
       context: .
     volumes:
-      - ../:/home/PyCon2024/Project
+      - ./:/home/PyCon2024/Project
     ports:
       - '8888:8888'
     env_file:
       - 'minio.env'
-    entrypoint: /home/PyCon2024/venv/bin/jupyter lab --allow-root --no-browser --ip=0.0.0.0
+    entrypoint: bash /home/PyCon2024/entrypoint.sh
     networks:
       - lakehouse-network
   trino:
@@ -80,7 +80,7 @@ services:
       - '9000:9000'
       - '9001:9001'
     volumes:
-      - ../minio-data:/data
+      - ./Storage/minio:/data
     env_file:
       - 'minio.env'
     command: server --console-address ":9001" /data
