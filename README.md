@@ -113,10 +113,6 @@ Download the required packages:
 ```bash
 make install
 ```
-Or
-```bash
-sh ./Scripts/0.download_dependencies.sh
-```
 
 **IMPORTANT**: this process will take a long time, depending on your Internet connection speed.
 
@@ -125,12 +121,22 @@ Start the local stack:
 ```bash
 make run
 ```
-Or
+
+Run the local Jupiter engine:
+
 ```bash
-docker-compose up --attach spark
+make open_local_jupiter
 ```
 
-Decompress the example data files:
+Run the local Minio explorer:
+
+```bash
+make open_local_minio
+```
+
+## Data preparation
+
+Decompress the example data files for the Pockemon Data Ingestion:
 
 ```bash
 cd data
@@ -139,28 +145,9 @@ unzip pokemon.zip
 unzip types.zip
 ```
 
-Run the local Jupiter engine:
-
-```bash
-make open_local_jupiter
-```
-Or
-```bash
-open http://127.0.0.1:8888/lab
-```
-
-Run the local Minio explorer:
-
-```bash
-make open_local_minio
-```
-Or
-```bash
-open http://127.0.0.1:9001
-```
-
 ### Jupiter notebooks
 
+* [Pockemon data ingestion](notebooks/Pokemon-data-ingestion.ipynb)
 * [Raygun data ingestion](notebooks/Raygun-data-ingestion.ipynb)
 
 ## License
@@ -169,6 +156,10 @@ This is a open-sourced software licensed under the [MIT](LICENSE) license.
 
 ## Credits
 
-This project is maintained by [Carlos J. Ramirez](https://www.carlosjramirez.com). For more information or to contribute to the project, visit [Data Lakehouse 101 on GitHub](https://github.com/tomkat-cr/lakehouses-101-pycon2024).
+This project is maintained by [Carlos J. Ramirez](https://www.carlosjramirez.com).
+
+It was forked from the original [Data Lakehouse 101](https://github.com/alejogm0520/lakehouses-101-pycon2024) made by [Alejandro Gómez Montoya](https://github.com/alejogm0520).
+
+For more information or to contribute to the project, visit [Data Lakehouse 101 on GitHub](https://github.com/tomkat-cr/lakehouses-101-pycon2024).
 
 Happy Coding!
