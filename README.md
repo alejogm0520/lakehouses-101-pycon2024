@@ -18,8 +18,10 @@ This repository aims to introduce the Data Lakehouse pattern as a suitable and f
 ![Common DatalakeHouse technologies](./images/1_xuE8_N_LxoP49S1Pu5Wn5A.webp)<BR/>
 ([Image source](https://medium.com/adfolks/data-lakehouse-paradigm-of-decade-caa286f5b7a1))
 
+<!--
 ![Common DatalakeHouse technologies](./images/Data-Lake-vs-Data-Warehouse.webp)<BR/>
 ([Image source](https://www.montecarlodata.com/blog-data-lake-vs-data-warehouse))
+-->
 
 * **Apache Spark**<BR/>
   Processing Layer.<BR/>
