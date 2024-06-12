@@ -198,3 +198,18 @@ dmypy.json
 .pyre/
 .pytype/
 cython_debug/
+
+# Data
+data/moves
+data/pokemon
+data/types
+data/raygun/*
+
+# Temp Packages
+TempPackages/aws-java-sdk-bundle-1.11.1026.jar
+TempPackages/hadoop-aws-3.3.3.jar
+TempPackages/postgresql-42.7.3.jar
+TempPackages/trino-cli-449-executable.jar
+
+# Storage
+Storage/minio/.minio.sys
