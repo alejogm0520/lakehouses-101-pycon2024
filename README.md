@@ -21,20 +21,31 @@ This repository aims to introduce the Data Lakehouse pattern as a suitable and f
   [https://min.io](https://min.io)
 
 * Apache Hive<BR/>
-  To be used as data catalog.<BR/>
+  Data catalog.<BR/>
   [https://hive.apache.org](https://hive.apache.org)
 
 * Postgres Database<BR/>
-  To support the data catalog.<BR/>
+  Data catalog persistence.<BR/>
   [https://www.postgresql.org](https://www.postgresql.org)
 
 * Trino<BR/>
-  Used as a Query engine and data governance.<BR/>
+  Query engine and data governance.<BR/>
   [https://trino.io](https://trino.io)
 
+## Other Components
+
 * Delta Lake<BR/>
-  Open table format used. Click [here](https://www.starburst.io/data-glossary/open-table-formats/) for more information about Open Table Formats.<BR/>
+  Open table format. Click [here](https://www.starburst.io/data-glossary/open-table-formats/) for more information about Open Table Formats.<BR/>
   [https://delta.io](https://delta.io)
+
+* SQL Alchemy<BR/>
+  [https://docs.sqlalchemy.org](https://docs.sqlalchemy.org)
+
+* Pandas<BR/>
+  [https://pandas.pydata.org](https://pandas.pydata.org)
+
+* Jupiter Lab<BR/>
+  [https://docs.jupyter.org](https://docs.jupyter.org)
 
 ## Requirements
 
@@ -55,6 +66,10 @@ cd lakehouses-101-pycon2024
 Download the required packages:
 
 ```bash
+make install
+```
+Or
+```bash
 sh ./Scripts/0.download_dependencies.sh
 ```
 
@@ -62,6 +77,10 @@ sh ./Scripts/0.download_dependencies.sh
 
 Start the local stack:
 
+```bash
+make run
+```
+Or
 ```bash
 docker-compose up --attach spark
 ```
@@ -78,7 +97,21 @@ unzip types.zip
 Run the local Jupiter engine:
 
 ```bash
+make open_local_jupiter
+```
+Or
+```bash
 open http://127.0.0.1:8888/lab
+```
+
+Run the local Minio explorer:
+
+```bash
+make open_local_minio
+```
+Or
+```bash
+open http://127.0.0.1:9001
 ```
 
 ### Jupiter notebooks

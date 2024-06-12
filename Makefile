@@ -15,11 +15,12 @@ data_unzip:
 	unzip pokemon.zip
 	unzip types.zip
 
-serve:
+run:
 	docker-compose up --attach spark
-
-run: serve
 
 open_local_jupiter:
 	open http://127.0.0.1:8888/lab
+
+open_local_minio:
+	open http://127.0.0.1:9001
 

@@ -213,3 +213,5 @@ TempPackages/trino-cli-449-executable.jar
 
 # Storage
 Storage/minio/.minio.sys
+Storage/minio/data-lakehouse
+.Trash-0
