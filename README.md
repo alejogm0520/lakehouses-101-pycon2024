@@ -14,11 +14,6 @@ Here's where **Data Lakehouses** come into action, being a hybrid solution with 
 
 **Data Lakehouses** aim to combine elements of data warehousing with core elements of the data lake. Put simply, they are designed to provide the lower costs of cloud storage even for large amounts of raw data alongside support for certain analytics concepts – such as SQL access to curated and structured data tables stored in relational databases, or support for large scale processing of Big Data analytics or machine learning workloads ([source](https://www.exasol.com/resource/data-lake-warehouse-or-lakehouse/)).
 
-<!--
-![Common DatalakeHouse technologies](./images/1676637608474.png)<BR/>
-([Image source](https://www.linkedin.com/pulse/lakehouse-convergence-data-warehousing-science-dr-mahendra/))
--->
-
 ![Common DatalakeHouse technologies](./images/data-lakehouse-new.png)<BR/>
 ([Image source](https://www.databricks.com/glossary/data-lakehouse))
 
@@ -49,11 +44,6 @@ Readings:
 
 ![DatalakeHouse components](./images/1_xuE8_N_LxoP49S1Pu5Wn5A.webp)<BR/>
 ([Image source](https://medium.com/adfolks/data-lakehouse-paradigm-of-decade-caa286f5b7a1))
-
-<!--
-![Common DatalakeHouse technologies](./images/Data-Lake-vs-Data-Warehouse.webp)<BR/>
-([Image source](https://www.montecarlodata.com/blog-data-lake-vs-data-warehouse))
--->
 
 * **Apache Spark**<BR/>
   Processing Layer.<BR/>
@@ -156,10 +146,6 @@ This is a open-sourced software licensed under the [MIT](LICENSE) license.
 
 ## Credits
 
-This project is maintained by [Carlos J. Ramirez](https://www.carlosjramirez.com).
-
-It was forked from the original [Data Lakehouse 101](https://github.com/alejogm0520/lakehouses-101-pycon2024) made by [Alejandro Gómez Montoya](https://github.com/alejogm0520).
-
-For more information or to contribute to the project, visit [Data Lakehouse 101 on GitHub](https://github.com/tomkat-cr/lakehouses-101-pycon2024).
+This project is maintained by [Alejandro Gómez Montoya](https://github.com/alejogm0520). For more information or to contribute to the project, visit [Data Lakehouse 101 on GitHub](https://github.com/alejogm0520/lakehouses-101-pycon2024).
 
 Happy Coding!

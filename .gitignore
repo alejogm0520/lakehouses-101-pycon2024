@@ -203,7 +203,7 @@ cython_debug/
 data/moves
 data/pokemon
 data/types
-data/raygun/*
+data-*
 
 # Temp Packages
 TempPackages/aws-java-sdk-bundle-1.11.1026.jar

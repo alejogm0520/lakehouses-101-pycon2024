@@ -56,10 +56,6 @@ fi
 
 # Upload Data
 echo ""
-echo "Listing data from '"${BASE_PATH}/${DATA_SUBDIR}"'"
-echo ""
-ls -lah "${BASE_PATH}/${DATA_SUBDIR}"
-echo ""
 echo "Uploading data from '"${BASE_PATH}/${DATA_SUBDIR}"' to 'minio/data-lakehouse/Raw'"
 echo ""
 mc cp -r "${BASE_PATH}/${DATA_SUBDIR}" minio/data-lakehouse/Raw/
