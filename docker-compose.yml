@@ -19,6 +19,7 @@ services:
   trino:
     image: 'trinodb/trino:448'
     hostname: trino
+    container_name: trino
     depends_on:
        - metastore
        - minio
@@ -33,6 +34,7 @@ services:
   postgres:
     image: 'postgres:latest'
     hostname: postgres
+    container_name: postgres
     environment:
       - POSTGRES_USER=hive
       - POSTGRES_PASSWORD=password
@@ -44,6 +46,7 @@ services:
   metastore:
     image: 'apache/hive:4.0.0'
     hostname: metastore
+    container_name: metastore
     depends_on:
       - postgres
     ports:

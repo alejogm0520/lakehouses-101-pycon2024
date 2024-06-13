@@ -16,7 +16,7 @@ download_file () {
   then
     echo "${FILE_PATH} is already downloaded."
   else
-      wget -O "${FILE_PATH}" "${URL}"
+    wget -O "${FILE_PATH}" "${URL}"
   fi
 }
 
