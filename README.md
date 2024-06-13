@@ -137,8 +137,7 @@ unzip types.zip
 
 ### Jupiter notebooks
 
-* [Pockemon data ingestion](notebooks/Pokemon-data-ingestion.ipynb)
-* [Raygun data ingestion](notebooks/Raygun-data-ingestion.ipynb)
+* [Pokemon data ingestion](notebooks/Pokemon-data-ingestion.ipynb)
 
 ## License
 
